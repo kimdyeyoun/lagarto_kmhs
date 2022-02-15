@@ -144,5 +144,14 @@ public class UserService {
         return mapper.authKey(entity);
     }
 
+    public int nicknameCheck(String nickname){
+        int result = mapper.nicknameCheck(nickname);
+        return result;
+    }
+
+    public void informationUpd(UserEntity entity){
+        entity.setIuser(utils.getLoginUserPk());
+        mapper.informationUpd(entity);
+    }
 
 }

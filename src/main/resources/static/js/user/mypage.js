@@ -190,7 +190,7 @@
                     if (SetTime < 0) {
                         flag2 = false;
                         clearInterval(x); // 타이머 종료하는 함수
-                        document.getElementById("timer").innerHTML = "인증만료";
+                        document.getElemenltById("timer").innerHTML = "인증만료";
                     }
                 }, 1000); // 1초마다
 

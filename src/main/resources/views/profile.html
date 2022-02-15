@@ -1,0 +1,18 @@
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="temp/thymeleaf_layout">
+
+<head>
+    <title>프로필</title>
+    <link rel="stylesheet" th:href="@{/css/user/profil.css}">
+    <script defer th:src="@{/js/user/profile.js}"></script>
+</head>
+
+<th:block layout:fragment="content">
+    <div>
+        <button id="follow-btn" onsubmit="follow(this)">팔로우</button>
+    </div>
+</th:block>
+
+
